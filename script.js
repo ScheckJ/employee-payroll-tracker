@@ -29,10 +29,12 @@ multEmployee.push(employee)
   const cont = confirm ("Add next employee?")
   if (!cont) {go = false}
 }
+return 
 }
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  
 }
 
 // Select a random employee
