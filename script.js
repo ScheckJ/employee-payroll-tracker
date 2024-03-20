@@ -1,12 +1,17 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
+
+const multEmployee = [];
+
+let go = true;
+
+
+while (go) {
 const firstName = prompt("Enter your first name");
 
 const lastName = prompt("Enter your last name");
 
 const salary = prompt ("Enter your salary");
-
-const multEmployee = []
 
 const employee = { 
   firstName,
@@ -14,18 +19,17 @@ const employee = {
   salary: parseInt (salary)
 }
 
-// multEmployee.push(employee)
-// console.log(multEmployee)
+multEmployee.push(employee)
 
-// console.log(employee);
+  const cont = confirm ("Add next employee?")
+  if (!cont) {go = false}
+}
 
+console.log(multEmployee)
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-// while (go) {
-//   const cont = confirm ("Add next employee?")
-// }
-
+    collectEmployees.push(multEmployee)
 }
 
 // Display the average salary
