@@ -8,7 +8,7 @@ const salary = prompt ("Enter your salary");
 
 const multEmployee = []
 
-const employee = {
+const employee = { 
   firstName,
   lastName,
   salary: parseInt (salary)
