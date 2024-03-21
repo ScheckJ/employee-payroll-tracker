@@ -58,7 +58,7 @@ const getRandomEmployee = function (employeesArray) {
   
   // Used Math.random in order to get a random selection among employees for a drawing winner. Also added Math.floor in order to round down to a whole number and ensure any index may be selected.
   const randomemployee = Math.floor(Math.random() * employeesArray.length);
-  console.log ("congratulations to " + employeesArray[randomemployee].firstName +  " " + employeesArray[randomemployee].lastName+ ", our random drawing winner!");
+  console.log ("Congratulations to " + employeesArray[randomemployee].firstName +  " " + employeesArray[randomemployee].lastName+ ", our random drawing winner!");
 };
 
 /*
