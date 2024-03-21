@@ -3,12 +3,17 @@ const addEmployeesBtn = document.querySelector("#add-employees-btn");
 
 // Collect employee data
 const collectEmployees = function () {
-  const multEmployee = [];
+  // Created an array for employee objects to be pushed too.
 
-  console.log(multEmployee);
+  const multEmployee = [];
+  
+  // Created a variable with a true value for the while loop below
 
   let go = true;
+
   // TODO: Get user input to create and return an array of employee objects
+
+  // Created a while loop to ensure data for multiple emmployees could be entered. Also ensured the loop would end by assigning the "go" variable a value of false when cancel is selected on the "add another employee prompt."
 
   while (go) {
     const firstName = prompt("Enter your first name");
@@ -37,7 +42,8 @@ const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
   const totalEmp = employeesArray.length;
   let totalSalary = 0;
-  // for loop
+
+  // Created a for loop in order to log the average salary of employees
   for (let i = 0; i < totalEmp; i++) {
    totalSalary = totalSalary + employeesArray[i].salary
     
@@ -49,7 +55,8 @@ const displayAverageSalary = function (employeesArray) {
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
-  // getRandomEmployee.Math
+  
+  // Used Math.random in order to get a random selection among employees for a drawing winner. Also added Math.floor in order to round down to a whole number and ensure any index may be selected.
   const randomemployee = Math.floor(Math.random() * employeesArray.length);
   console.log ("congratulations to " + employeesArray[randomemployee].firstName +  " " + employeesArray[randomemployee].lastName+ ", our random drawing winner!");
 };
